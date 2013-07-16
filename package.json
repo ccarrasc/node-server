@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-example",
+  "version": "0.0.1",
+  "main": "web.js",
+  "dependencies": {
+    "express": "latest"
+  },
+  "engines": {
+    "node": "latest",
+    "npm": "latest"
+  }
+}
