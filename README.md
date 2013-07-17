@@ -8,7 +8,11 @@ The provision script installs node.js/express and the Heroku Toolbelt.
 1. Install [VirtualBox][virtualbox.url]
 2. Install [Vagrant][vagrant.url]
 3. Clone this project
-4. cd to the project and execute 'vagrant up'
+4. Start up the VM with vagrant:
+
+```bash
+  $ vagrant up
+```
 5. Wait for the box to download (Ubuntu) and the VM to be provisioned
 6. Browse to [http://localhost:8080][localhost.url]
 
@@ -16,11 +20,15 @@ Vagrant automatically shares the project directory to /vagrant in the VM - so yo
 *Note that the root user and password are both 'vagrant'*
 
 ## Stop/Halt the VM:
+
+```bash
   $ vagrant halt
-
+```
 ## (Re)Start the VM without provisioning:
-  $ vagrant up --no-provision
 
+```bash
+  $ vagrant up --no-provision
+```
 ## Deploying to [Heroku][heroku.url]:
 1. ssh into the VM by executing: $ vagrant ssh
 2. Add heroku as a remote repo (execute and complete the prompts):
