@@ -5,16 +5,16 @@ A very simple example of using Vagrant to provision a VirtualBox VM running Ubun
 The provision script installs node.js/express and the Heroku Toolbelt.
 
 ## First Install/Run:
-1. Install [VirtualBox][virtualbox.url]
-2. Install [Vagrant][vagrant.url]
-3. Clone this project
-4. Start up the VM with vagrant:
+* Install [VirtualBox][virtualbox.url]
+* Install [Vagrant][vagrant.url]
+* Clone this project
+* Start up the VM with vagrant
 
 ```bash
   $ vagrant up
 ```
-5. Wait for the box to download (Ubuntu) and the VM to be provisioned
-6. Browse to [http://localhost:8080][localhost.url]
+* Wait for the box to download (Ubuntu) and the VM to be provisioned
+* Browse to [http://localhost:8080][localhost.url]
 
 Vagrant automatically shares the project directory to /vagrant in the VM - so you can code in the comfort of your host machine.
 *Note that the root user and password are both 'vagrant'*
@@ -30,20 +30,20 @@ Vagrant automatically shares the project directory to /vagrant in the VM - so yo
   $ vagrant up --no-provision
 ```
 ## Deploying to [Heroku][heroku.url]:
-1. ssh into the VM by executing: $ vagrant ssh
-2. Add heroku as a remote repo (execute and complete the prompts):
+* ssh into the VM by executing: $ vagrant ssh
+* Add heroku as a remote repo (execute and complete the prompts):
 
 ```bash
 vagrant@precise64:/vagrant$ heroku login
 vagrant@precise64:/vagrant$ heroku keys:add
 vagrant@precise64:/vagrant$ heroku create
 ```
-3. Deploy to heroku:
+* Deploy to heroku:
 
 ```bash
 vagrant@precise64:/vagrant$ git push heroku master
 ```
-4. Browse to your herokuapp.com url
+* Browse to your herokuapp.com url
 
 [virtualbox.url]:https://www.virtualbox.org/
 [vagrant.url]:http://www.vagrantup.com/
