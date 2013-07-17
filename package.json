@@ -6,7 +6,7 @@
     "express": "latest"
   },
   "engines": {
-    "node": "latest",
+    "node": "0.10.13",
     "npm": "latest"
   }
 }
