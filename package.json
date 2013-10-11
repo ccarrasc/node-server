@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "main": "web.js",
   "dependencies": {
-    "express": "latest"
+    "express": "latest",
+    "ejs": "latest"
   },
   "engines": {
     "node": "0.10.13",
