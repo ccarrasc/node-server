@@ -8,6 +8,7 @@ The provision script installs node.js/express and the Heroku Toolbelt.
 * Install [VirtualBox][virtualbox.url]
 * Install [Vagrant][vagrant.url]
 * Clone this project
+  * If using [Nodeclipse][nodeclipse.url], you can import this project
 * Start up the VM with vagrant
 
 ```bash
@@ -51,4 +52,4 @@ vagrant@precise64:/vagrant$ git push heroku master
 [vagrant.url]:http://www.vagrantup.com/
 [localhost.url]:http://localhost:8080
 [heroku.url]:https://www.heroku.com/
-
+[nodeclipse.url]:http://www.nodeclipse.org/
